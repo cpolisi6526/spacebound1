@@ -1,2 +1,2 @@
-public class Firefly {
+public class Firefly extends Ship {
 }

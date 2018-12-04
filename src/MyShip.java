@@ -1,2 +1,2 @@
-public class MyShip {
+public class MyShip extends Ship{
 }
