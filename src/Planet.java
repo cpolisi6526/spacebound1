@@ -2,8 +2,7 @@ public class Planet {
     private Ship x;
     private int xLoc;
     private int yLoc;
-    public Planet(Ship x, int xLoc, int yLoc){
-        this.x=x;
+    public Planet(int xLoc, int yLoc){
         this.xLoc=xLoc;
         this.yLoc=yLoc;
     }
