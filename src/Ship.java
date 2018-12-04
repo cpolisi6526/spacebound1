@@ -1,7 +1,7 @@
-public class Ship {
+public abstract class Ship {
     String name;
-    private int xLoc;
-    private int yLoc;
+    int xLoc;
+    int yLoc;
 
     public int getxLoc() {
         return xLoc;

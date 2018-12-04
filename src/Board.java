@@ -36,32 +36,27 @@ public class Board {
     }
 
     public static void edit(Planet[][] board) {
-        int randomx = (int) Math.random() * board.length;
-        int randomy = (int) Math.random() * board.length;
-        board[randomx][randomy] = new Station(randomx, randomy);
-        for (int b = 0; b < board.length % 3; b++) {
-            randomx = (int) Math.random() * board.length;
-            randomy = (int) Math.random() * board.length;
-            board[randomx][randomy] = new Gaseous(randomx, randomy);
+        int x,y=0;
+        for (int b=0; b<3; b++) {
+            x = (int) (Math.random() * board.length);
+            y = (int) (Math.random() * board.length);
+            board[x][y] = new Station(x, y);
+        }
+        for (int b = 0; b < 4; b++) {
+            x = (int) (Math.random() * board.length);
+            y = (int) (Math.random() * board.length);
+            board[x][y] = new Gaseous(x, y);
         }
     }
 
     public static String print(Planet[][] board) {
-        String print = "";
+        String str = "";
         for (int row = 0; row < board.length; row++) {
             for (int col = 0; col < board[row].length; col++) {
-                if (board[row][col] == Star(row, col)) {
-                    print = print + "Star ";
-                }
-                if (board[row][col] == Gaseous(row, col)) {
-                    print = print + "Gaseous ";
-                }
-                if (board[row][col] == Station(row, col)) {
-                    print = print + "Station ";
-                }
+                str = str + board[row][col].getPlanet();
             }
-            print = print + "\n";
+            str = str + "\n";
         }
-        return print;
+        return str;
     }
 }

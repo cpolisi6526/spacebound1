@@ -1,7 +1,7 @@
-public class Planet {
-    private Ship x;
-    private int xLoc;
-    private int yLoc;
+public abstract class Planet {
+    Ship x;
+     int xLoc;
+     int yLoc;
     public Planet(int xLoc, int yLoc){
         this.xLoc=xLoc;
         this.yLoc=yLoc;
@@ -14,4 +14,6 @@ public class Planet {
     public void leaveRoom(Ship a){
     a= null;
     }
+
+    public abstract String getPlanet();
 }
