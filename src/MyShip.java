@@ -18,4 +18,10 @@ public class MyShip extends Ship{
         this.yLoc = yLoc;
     }
 
+    public String getPlanet(){
+        if ((Planet.getxLoc()== MyShip.getxLoc()) && (Planet.getyLoc()== MyShip.getyLoc()){
+
+        }
+    }
+
 }

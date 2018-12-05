@@ -6,6 +6,7 @@ public abstract class Planet {
         this.xLoc=xLoc;
         this.yLoc=yLoc;
     }
+
     public void enterRoom(Ship a){
         x=a;
         x.setxLoc(this.xLoc);
@@ -13,6 +14,13 @@ public abstract class Planet {
     }
     public void leaveRoom(Ship a){
     a= null;
+    }
+
+    public int getxLoc(){
+        return xLoc;
+    }
+    public int getyLoc(){
+        return yLoc;
     }
 
     public abstract String getPlanet();
