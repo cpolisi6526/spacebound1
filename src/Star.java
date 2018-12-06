@@ -1,3 +1,4 @@
+
 public class Star extends Planet {
     public Star(int xLoc, int yLoc){
         super(xLoc,yLoc);
@@ -13,7 +14,9 @@ public class Star extends Planet {
         int rand= (int) (Math.random() * stars.length);
         String starName= stars[rand];
         System.out.println("Welcome to the star of " + starName + ".");
+
         //add if else statement if occupied there's a challenge if not the person is able to be leave as they wish
+
 
     }
     public void leaveRoom(Ship a){
@@ -23,4 +26,6 @@ public class Star extends Planet {
     public String getPlanet(){
         return "STAR ";
     }
+
+    //public void
 }
