@@ -30,13 +30,13 @@ public class Board {
         board[0][0].enterRoom(player1);
         while (gameOn) {
             //char moves and it prints map after each move
-            System.out.println("Where would you like to move? (Choose N, S, E, W)");
+            System.out.println("Let's fly. Where you want to go? (Choose N, S, E, W)");
             String move = in.nextLine();
             if (validMove(move, player1, board)) {
                 System.out.println(print(board, player1));
 
             } else {
-                System.out.println("Please choose a valid move.");
+                System.out.println(name+ " , that's outside the realms of the universe.");
             }
 
 
@@ -69,7 +69,7 @@ public class Board {
     }
 
     // to make ships FIND A WAY TO HAVE IT AVOID STATIONS
-    public static String[][] shipMaker(Planet[][] board) {
+    public static void shipMaker(Planet[][] board) {
         int x, y = 0;
         String[][] yn = new String[board.length][board.length];
         Enemy a[] = new Enemy[4];
@@ -82,17 +82,14 @@ public class Board {
                     if (x == 1) {
                         a[y] = new Enemy(row, col);
                         y++;
-                        yn[row][col] = "E";
                     }
                     if (x == 2) {
                         b[y] = new Firefly(row, col);
                         y++;
-                        yn[row][col] = "F";
                     }
                 }
             }
         }
-        return yn;
     }
 
 
@@ -116,30 +113,30 @@ public class Board {
         return str;
     }
 //thx mr levin
-    public static boolean validMove(String move, Ship p, Planet[][] map) {
+    public static boolean validMove(String move, Ship p, Planet[][] board) {
         move = move.toLowerCase().trim();
         switch (move) {
             case "n":
                 if (p.getxLoc() > 0) {
-                    map[p.getxLoc()][p.getyLoc()].leaveRoom(p);
-                    map[p.getxLoc() - 1][p.getyLoc()].enterRoom(p);
+                    board[p.getxLoc()][p.getyLoc()].leaveRoom(p);
+                    board[p.getxLoc() - 1][p.getyLoc()].enterRoom(p);
                     return true;
                 } else {
                     return false;
                 }
             case "e":
-                if (p.getyLoc() < map[p.getyLoc()].length - 1) {
-                    map[p.getxLoc()][p.getyLoc()].leaveRoom(p);
-                    map[p.getxLoc()][p.getyLoc() + 1].enterRoom(p);
+                if (p.getyLoc() < board[p.getyLoc()].length - 1) {
+                    board[p.getxLoc()][p.getyLoc()].leaveRoom(p);
+                    board[p.getxLoc()][p.getyLoc() + 1].enterRoom(p);
                     return true;
                 } else {
                     return false;
                 }
 
             case "s":
-                if (p.getxLoc() < map.length - 1) {
-                    map[p.getxLoc()][p.getyLoc()].leaveRoom(p);
-                    map[p.getxLoc() + 1][p.getyLoc()].enterRoom(p);
+                if (p.getxLoc() < board.length - 1) {
+                    board[p.getxLoc()][p.getyLoc()].leaveRoom(p);
+                    board[p.getxLoc() + 1][p.getyLoc()].enterRoom(p);
                     return true;
                 } else {
                     return false;
@@ -147,8 +144,8 @@ public class Board {
 
             case "w":
                 if (p.getyLoc() > 0) {
-                    map[p.getxLoc()][p.getyLoc()].leaveRoom(p);
-                    map[p.getxLoc()][p.getyLoc() - 1].enterRoom(p);
+                    board[p.getxLoc()][p.getyLoc()].leaveRoom(p);
+                    board[p.getxLoc()][p.getyLoc() - 1].enterRoom(p);
                     return true;
                 } else {
                     return false;

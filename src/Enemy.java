@@ -18,4 +18,6 @@ public class Enemy extends Ship {
         this.yLoc = yLoc;
     }
 
+ // public String getPlanet(){ return "E";}
+
 }

@@ -1,7 +1,8 @@
 public class Firefly extends Ship {
-    public Firefly(int xLoc, int yLoc){
-        super("Firefly",xLoc,yLoc);
+    public Firefly(int xLoc, int yLoc) {
+        super("Firefly", xLoc, yLoc);
     }
+
     public int getxLoc() {
         return xLoc;
     }
@@ -18,4 +19,9 @@ public class Firefly extends Ship {
         this.yLoc = yLoc;
     }
 
+   // public String getPlanet() {
+    //    return "F";
+   // }
+
 }
+

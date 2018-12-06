@@ -16,7 +16,7 @@ public class Star extends Planet {
         System.out.println("Welcome to the star of " + starName + ".");
 
         //add if else statement if occupied there's a challenge if not the person is able to be leave as they wish
-
+        if (a[])
 
     }
     public void leaveRoom(Ship a){
@@ -26,6 +26,17 @@ public class Star extends Planet {
     public String getPlanet(){
         return "STAR ";
     }
+
+    public boolean enemyCheck(Enemy[] a){
+        for(int index=0; index<a.length; index++ ){
+            if(a[index].getxLoc()==xLoc && a[index].getyLoc()==yLoc){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean fireflyCheck(Firefly[] b)
 
     //public void
 }

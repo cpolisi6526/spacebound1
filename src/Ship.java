@@ -24,4 +24,6 @@ public abstract class Ship {
         this.yLoc= yLoc;
     }
 
+   // public abstract String getPlanet();
+
 }
