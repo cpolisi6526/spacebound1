@@ -1,4 +1,5 @@
 public class Star extends Planet {
+
     public Star(int xLoc, int yLoc) {
         super(xLoc, yLoc);
     }
@@ -15,7 +16,7 @@ public class Star extends Planet {
         System.out.println("Welcome to the star of " + starName + ".");
 
         //add if else statement if occupied there's a challenge if not the person is able to be leave as they wish
-
+        public boolean enemyCheck()
 
     }
 
