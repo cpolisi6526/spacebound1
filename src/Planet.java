@@ -24,4 +24,5 @@ public abstract class Planet {
     }
 
     public abstract String getPlanet();
+
 }

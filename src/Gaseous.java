@@ -20,5 +20,23 @@ public class Gaseous extends Planet {
     public String getPlanet(){
         return "GASE ";
     }
+
+    public boolean enemyCheck(Enemy[] a) {
+        for (int index = 0; index < a.length; index++) {
+            if (a[index].getxLoc() == xLoc && a[index].getyLoc() == yLoc) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean fireflyCheck(Firefly[] b){
+        for (int index = 0; index < b.length; index++) {
+            if (b[index].getxLoc() == xLoc && b[index].getyLoc() == yLoc) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
 

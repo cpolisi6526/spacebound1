@@ -12,9 +12,9 @@ public class Board {
         System.out.println("Hey " + name + ". I'm glad you're here to fight off enemy ships.Do you want a 'hard', 'medium' or 'essy' battle?");
         String response = in.nextLine();
         if (response.equals("hard")) {
-            board = new Planet[9][9];
-        } else if (response.equals("medium")) {
             board = new Planet[6][6];
+        } else if (response.equals("medium")) {
+            board = new Planet[5][5];
         } else if (response.equals("easy")) {
             board = new Planet[3][3];
         } else {
