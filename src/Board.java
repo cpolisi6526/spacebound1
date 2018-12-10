@@ -68,31 +68,6 @@ public class Board {
         }
     }
 
-    // to make ships FIND A WAY TO HAVE IT AVOID STATIONS
-    public static void shipMaker(Planet[][] board) {
-        int x, y = 0;
-        String[][] yn = new String[board.length][board.length];
-        Enemy a[] = new Enemy[4];
-        Firefly b[] = new Firefly[4];
-        // find a way to filter out stations from the board then for random ones add a enemy or firefly to it
-        for (int row = 0; row < board.length; row++) {
-            for (int col = 0; col < board[col].length; col++) {
-                if (board[row][col].getPlanet() == "STAR" || board[row][col].getPlanet() == "GASE") {
-                    x = (int) (Math.random() * 4);
-                    if (x == 1) {
-                        a[y] = new Enemy(row, col);
-                        y++;
-                    }
-                    if (x == 2) {
-                        b[y] = new Firefly(row, col);
-                        y++;
-                    }
-                }
-            }
-        }
-    }
-
-
 
 
 //prints board

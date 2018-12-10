@@ -1,23 +1,27 @@
-public class Enemy extends Ship {
-    public Enemy(int xLoc, int yLoc){
-        super("Enemy",xLoc,yLoc);
+public class Enemy extends Ship implements badguys {
+    public Enemy(){
+        super("Enemy Ship");
     }
-    public int getxLoc() {
-        return xLoc;
-    }
-
-    public void setxLoc(int xLoc) {
-        this.xLoc = xLoc;
-    }
-
-    public int getyLoc() {
-        return yLoc;
+ //   public Enemy(){
+     //   this.name=nameGenerator();
+  //  }
+    public String getName(){
+        return name;
     }
 
-    public void setyLoc(int yLoc) {
-        this.yLoc = yLoc;
+    public String nameGenerator(){
+        String[] enemynames= {"Noodle", "2D", "Murdock", "Russell", "Ursula", "Stewart"};
+        int ran= (int) (Math.random()*enemynames.length);
+        return enemynames[ran];
     }
 
- // public String getPlanet(){ return "E";}
+    public String Greeting(){
+        return "Hello. You found me. I'm " + name+ "It's time for battle.";
+    }
+
+    public String challenge(){
+        String prob= "";
+        return prob;
+    }
 
 }

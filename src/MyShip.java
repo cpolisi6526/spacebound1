@@ -1,6 +1,10 @@
 public class MyShip extends Ship{
+    int xLoc;
+    int yLoc;
     public MyShip(int xLoc, int yLoc){
-        super("MyShip",xLoc,yLoc);
+        super("MyShip");
+        this.xLoc= xLoc;
+        this.yLoc= yLoc;
     }
     public int getxLoc() {
         return xLoc;
