@@ -23,7 +23,8 @@ public class Board {
         }
         fill(board);
         edit(board);
-        System.out.println("Here's a map of the universe... you won't be able to see where the bad guys are but hopefully it helps. You're the X.");
+        System.out.println("\n Here's a map of the universe... you won't be able to see where the bad guys are but hopefully it helps. You're the X. " +
+                "\n Also, there is no winning here. You play until you the enemies kill you, like in real life. Good luck.");
         System.out.println(print(board, player1));
 
 
@@ -44,7 +45,7 @@ public class Board {
         in.close();
     }
 
-    // fills board
+    // fills board w the Planet star
     public static void fill(Planet[][] board) {
         for (int row = 0; row < board.length; row++) {
             for (int col = 0; col < board[row].length; col++) {
@@ -53,7 +54,7 @@ public class Board {
         }
     }
 
-    // rnadomly edits board
+    // rnadomly edits board w other planets
     public static void edit(Planet[][] board) {
         int x, y = 0;
         for (int b = 0; b < 3; b++) {
