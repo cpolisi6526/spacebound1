@@ -7,10 +7,10 @@ public abstract class Planet {
         this.yLoc=yLoc;
     }
 
-    public void enterRoom(Ship a){
+    public void enterRoom(MyShip a){
         x=a;
-        x.setxLoc(this.xLoc);
-        x.setyLoc(this.yLoc);
+        a.setxLoc(this.xLoc);
+        a.setyLoc(this.yLoc);
     }
     public void leaveRoom(Ship a){
     a= null;

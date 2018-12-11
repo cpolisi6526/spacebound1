@@ -9,7 +9,7 @@ public class Board {
         System.out.println("Hello there welcome to my galaxy. I'm glad you're here to explore and fight. What's your name?");
         String name = in.nextLine();
         MyShip player1 = new MyShip(0, 0);
-        System.out.println("Hey " + name + ". I'm glad you're here to fight off enemy ships.Do you want a 'hard', 'medium' or 'essy' battle?");
+        System.out.println("Hey " + name + ". I'm glad you're here to fight off enemy ships.Do you want a 'hard', 'medium' or 'essy' battle? Warning: you lose a challenge, the game ends.");
         String response = in.nextLine();
         if (response.equals("hard")) {
             board = new Planet[6][6];
@@ -88,7 +88,7 @@ public class Board {
         return str;
     }
 //thx mr levin
-    public static boolean validMove(String move, Ship p, Planet[][] board) {
+    public static boolean validMove(String move, MyShip p, Planet[][] board) {
         move = move.toLowerCase().trim();
         switch (move) {
             case "n":

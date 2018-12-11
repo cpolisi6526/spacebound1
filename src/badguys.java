@@ -1,3 +1,3 @@
 public interface badguys {
-    public String Greeting();
+   public static String Greeting(){String greeting=""; return greeting; };
 }

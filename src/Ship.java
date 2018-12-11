@@ -1,5 +1,5 @@
 public abstract class Ship {
-    String name;
+    static String name;
 
     public Ship(String name) {
         this.name=name;
