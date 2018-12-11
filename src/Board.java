@@ -53,8 +53,6 @@ public class Board {
         }
     }
 
-
-
     // rnadomly edits board
     public static void edit(Planet[][] board) {
         int x, y = 0;
@@ -69,47 +67,6 @@ public class Board {
             board[x][y] = new Gaseous(x, y);
         }
     }
-
-    // to make ships FIND A WAY TO HAVE IT AVOID STATIONS
-    public static Enemy[] enemyMaker(Planet[][] board) {
-        int x, y = 0;
-        Enemy a[] = new Enemy[4];
-        // find a way to filter out stations from the board then for random ones add a enemy or firefly to it
-        for (int row = 0; row < board.length; row++) {
-            for (int col = 0; col < board[col].length; col++) {
-                if (board[row][col].getPlanet() == "STAR" || board[row][col].getPlanet() == "GASE") {
-                    x = (int) (Math.random() * 4);
-                    if (x == 1) {
-                        a[y] = new Enemy(row, col);
-                        y++;
-                    }
-
-                }
-            }
-        }
-        return a;
-    }
-
-    public static Firefly[] fireflyMaker(Planet[][] board) {
-        int x, y = 0;
-        Firefly b[] = new Firefly[4];
-        // find a way to filter out stations from the board then for random ones add a enemy or firefly to it
-        for (int row = 0; row < board.length; row++) {
-            for (int col = 0; col < board[col].length; col++) {
-                if (board[row][col].getPlanet() == "STAR" || board[row][col].getPlanet() == "GASE") {
-                    x = (int) (Math.random() * 4);
-                    if (x == 1) {
-                        b[y] = new Firefly(row, col);
-                        y++;
-                    }
-
-                }
-            }
-        }
-        return b;
-    }
-
-
 
 
 
