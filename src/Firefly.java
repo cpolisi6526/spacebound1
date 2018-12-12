@@ -20,11 +20,11 @@ public static String Greeting(){
         Scanner input= new Scanner(System.in);
         String answer= input.nextLine();
         if (answer.equals(ans[ran])){
-            output= name+ ": Sweet! Good job, fun messing with you visit anytime.";
+            output= "Firefly: Sweet! Good job, fun messing with you visit anytime.";
             System.out.println(output);
         }
         else{
-            output= name+ ": Stupid. Have fun in hell. \n Game over";
+            output="Firefly: Stupid. Have fun in hell. The correct answer was " + ans[ran] + "\n Game over";
             System.out.println(output);
             Board.gameOff();
         }

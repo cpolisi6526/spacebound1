@@ -8,7 +8,7 @@ public class Station extends Planet {
         a.setyLoc(this.yLoc);
 
         //welcomes to station
-        System.out.println("Hey welcome to the United States Space Station. There are no bas guys here. Come and go as you please.");
+        System.out.println("Hey welcome to the United States Space Station. There are no bad guys here. Come and go as you please.");
     }
     public void leaveRoom(Ship a){
         a= null;

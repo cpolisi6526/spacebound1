@@ -1,5 +1,6 @@
 public class Star extends Planet {
-
+    // overloaded constructor
+    public Star(){super(0,0);}
     public Star(int xLoc, int yLoc) {
         super(xLoc, yLoc);
     }

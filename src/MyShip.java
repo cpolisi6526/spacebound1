@@ -32,5 +32,4 @@ public class MyShip extends Ship{
     public String getPlanet() {
         return "  X  ";
     }
-
 }
