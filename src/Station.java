@@ -2,6 +2,9 @@ public class Station extends Planet {
     public Station(int xLoc, int yLoc) {
         super(xLoc, yLoc);
     }
+
+    //ooo look overriding method
+    @Override
     public void enterRoom(MyShip a){
         x=a;
         a.setxLoc(this.xLoc);

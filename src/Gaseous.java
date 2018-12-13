@@ -3,6 +3,7 @@ public class Gaseous extends Planet {
         super(xLoc, yLoc);
     }
 
+    @Override
     public void enterRoom(MyShip a) {
         x = a;
         a.setxLoc(this.xLoc);
