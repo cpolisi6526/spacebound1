@@ -1,4 +1,6 @@
-public class MyShip extends Ship{
+package Ships;
+
+public class MyShip extends Ship {
     // this is the player
     int xLoc;
     int yLoc;
@@ -11,7 +13,7 @@ public class MyShip extends Ship{
     }
 
     public MyShip(int xLoc, int yLoc){
-        super("MyShip");
+        super("Ships.MyShip");
         this.xLoc= xLoc;
         this.yLoc= yLoc;
     }

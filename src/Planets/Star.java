@@ -1,3 +1,9 @@
+package Planets;
+
+import Ships.Enemy;
+import Ships.Firefly;
+import Ships.MyShip;
+
 public class Star extends Planet {
     // overloaded constructor
     public Star(){super(0,0);}
@@ -25,7 +31,7 @@ public class Star extends Planet {
             Enemy.challenge();
         }
         if (dec==2){
-            System.out.println("There's a Firefly here. Be careful. These guys are unpredictable.");
+            System.out.println("There's a Ships.Firefly here. Be careful. These guys are unpredictable.");
             System.out.println(Firefly.Greeting());
             Firefly.challenge();
         }

@@ -1,3 +1,8 @@
+package Planets;
+
+import Ships.MyShip;
+import Ships.Ship;
+
 public abstract class Planet {
     Ship x;
      int xLoc;

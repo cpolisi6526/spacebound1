@@ -1,3 +1,5 @@
+package Ships;
+
 public abstract class Ship {
      String name;
     public Ship(){

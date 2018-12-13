@@ -1,12 +1,16 @@
+package Ships;
+
+import runnerboard.Runner;
+
 import java.util.Scanner;
 
-public class Firefly extends Ship implements badguys{
+public class Firefly extends Ship implements badguys {
 
     public Firefly(){
     super("firefly");
 }
 public static String Greeting(){
-     String greeting= "Firefly: I'm so big and powerful. Do I want to mess with you right now? Find out.";
+     String greeting= "Ships.Firefly: I'm so big and powerful. Do I want to mess with you right now? Find out.";
      return greeting;
 }
     public static void challenge(){
