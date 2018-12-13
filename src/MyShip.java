@@ -1,9 +1,11 @@
 public class MyShip extends Ship{
+    // this is the player
     int xLoc;
     int yLoc;
 
     public MyShip(){
         super("MyShip");
+        // initials loc at 0,0 on board
         this.xLoc=0;
         this.yLoc=0;
     }
@@ -28,7 +30,7 @@ public class MyShip extends Ship{
     public void setyLoc(int yLoc) {
         this.yLoc = yLoc;
     }
-
+// this was my prized idea
     public String getPlanet() {
         return "  X  ";
     }

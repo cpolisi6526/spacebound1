@@ -24,9 +24,10 @@ public static String Greeting(){
             System.out.println(output);
         }
         else{
+            // sorry for the mean language the firefly is so sporadic
             output="Firefly: Stupid. Have fun in hell. The correct answer was " + ans[ran] + "\n Game over";
             System.out.println(output);
-            Board.gameOff();
+            Runner.gameOff();
         }
     }
 
