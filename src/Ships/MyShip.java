@@ -1,17 +1,21 @@
-public class MyShip extends Ship{
+package Ships;
+
+import Ships.Ship;
+
+public class MyShip extends Ship {
     // this is the player
     int xLoc;
     int yLoc;
 
     public MyShip(){
-        super("MyShip");
+        super("Ships.MyShip");
         // initials loc at 0,0 on board
         this.xLoc=0;
         this.yLoc=0;
     }
 
     public MyShip(int xLoc, int yLoc){
-        super("MyShip");
+        super("Ships.MyShip");
         this.xLoc= xLoc;
         this.yLoc= yLoc;
     }

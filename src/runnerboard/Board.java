@@ -1,3 +1,11 @@
+package runnerboard;
+
+import Planets.Gaseous;
+import Planets.Planet;
+import Planets.Star;
+import Planets.Station;
+import Ships.MyShip;
+
 public class Board {
     Planet[][] a;
     int w;
@@ -15,7 +23,7 @@ public class Board {
         return w;
     }
 
-    // fills board w the Planet star
+    // fills board w the Planets.Planet star
     public void fill() {
         for (int row = 0; row < w; row++) {
             for (int col = 0; col < w; col++) {
@@ -40,7 +48,7 @@ public class Board {
     }
     //prints my beautiful  board
     public  String print(MyShip player1) {
-        String str = "";
+        String str = "\n";
         for (int row = 0; row < w; row++) {
             for (int col = 0; col < w; col++) {
                 if ((row== player1.getxLoc()) && (col== player1.getyLoc()) ){

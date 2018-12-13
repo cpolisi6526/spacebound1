@@ -1,3 +1,7 @@
+package runnerboard;
+
+import Ships.MyShip;
+
 import java.util.Scanner;
 
 public class Runner {

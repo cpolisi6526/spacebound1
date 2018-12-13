@@ -1,3 +1,9 @@
+package Planets;
+
+import Ships.Enemy;
+import Ships.Firefly;
+import Ships.MyShip;
+
 public class Star extends Planet {
     // overloaded constructor
     public Star(){super(0,0);}
