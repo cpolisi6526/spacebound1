@@ -12,8 +12,6 @@ public class Enemy extends Ship implements badguys {
         super("Enemy Ship");
     }
 
-
-
     public static String getName(String name){
         return name;
     }
@@ -39,8 +37,8 @@ public class Enemy extends Ship implements badguys {
         else{
             // shows right answer at end
             output= "Enemy Ship : You're wrong. The correct answer was " +
-                    // code told me i had to do this or error
-            new StringBuilder().append(ans[ran]).append(". Game over.").toString();
+
+                    ans[ran] + ". Game over.";
             System.out.println(output);
             Runner.gameOff();
         }
