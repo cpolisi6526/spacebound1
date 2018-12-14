@@ -1,4 +1,5 @@
 package Planets;
+
 import Ships.Enemy;
 import Ships.Firefly;
 import Ships.MyShip;
@@ -24,7 +25,7 @@ public class Gaseous extends Planet {
         // like star class randomly assigns bad guy or not... gaseous planets are less likely to have
 
         //add if else statement if occupied there's a challenge if not the person is able to be leave as they wish
-        int dec= (int) (Math.random()*6)+1;
+        int dec= (int) (Math.random()*4)+1;
         if (dec==1){
             System.out.println("Maybe you can't tell because of all the smoke, but look ahead. There's an enemy ship.");
             System.out.println(Enemy.Greeting());

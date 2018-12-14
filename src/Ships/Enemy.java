@@ -1,12 +1,9 @@
-package Ships;
-import runnerboard.Runner;
-
 import java.util.Scanner;
 // again w them class hierarchies
 public class Enemy extends Ship implements badguys {
 
     public Enemy(){
-        super("Ships.Enemy Ships.Ship");
+        super("Enemy Ship");
     }
 
     public static String getName(String name){
@@ -14,7 +11,7 @@ public class Enemy extends Ship implements badguys {
     }
 
     public static String Greeting(){
-        String greeting= "Enemy Ships: Hello. You found me. I'm Ships.Enemy Ships.Ship." + "It's time for battle.";
+        String greeting= "Enemy Ship: Hello. You found me. I'm Enemy Ship." + "It's time for battle.";
         return greeting;
     }
 //its what asks the question when there is a bad guy occupying a planet
@@ -28,12 +25,12 @@ public class Enemy extends Ship implements badguys {
         Scanner input= new Scanner(System.in);
         String answer= input.nextLine();
         if (answer.equals(ans[ran])){
-            output= "Enemy Ships: You're correct.... but next time try me. Are you going to leave yet?";
+            output= "Enemy Ship : You're correct.... but next time try me. Are you going to leave yet?";
             System.out.println(output);
         }
         else{
             // shows right answer at end
-            output= "Enemy Ships: You're wrong. The correct answer was " +
+            output= "Enemy Ship : You're wrong. The correct answer was " +
                     // code told me i had to do this or error
             new StringBuilder().append(ans[ran]).append(". Game over.").toString();
             System.out.println(output);

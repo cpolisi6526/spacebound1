@@ -48,7 +48,7 @@ public class Board {
     }
     //prints my beautiful  board
     public  String print(MyShip player1) {
-        String str = "";
+        String str = "\n";
         for (int row = 0; row < w; row++) {
             for (int col = 0; col < w; col++) {
                 if ((row== player1.getxLoc()) && (col== player1.getyLoc()) ){
