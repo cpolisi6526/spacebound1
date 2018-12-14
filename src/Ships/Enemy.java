@@ -1,3 +1,9 @@
+package Ships;
+
+import Ships.Ship;
+import Ships.badguys;
+import runnerboard.Runner;
+
 import java.util.Scanner;
 // again w them class hierarchies
 public class Enemy extends Ship implements badguys {
@@ -5,6 +11,8 @@ public class Enemy extends Ship implements badguys {
     public Enemy(){
         super("Enemy Ship");
     }
+
+
 
     public static String getName(String name){
         return name;
