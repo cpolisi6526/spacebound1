@@ -30,7 +30,7 @@ public class Enemy extends Ship implements badguys {
         String p= probs[ran];
         System.out.println(p);
         Scanner input= new Scanner(System.in);
-        String answer= input.nextLine();
+        String answer= input.nextLine().toLowerCase().trim();
         if (answer.equals(ans[ran])){
             output= "Enemy Ship : You're correct.... but next time try me. Are you going to leave yet?";
             System.out.println(output);
