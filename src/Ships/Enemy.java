@@ -17,7 +17,8 @@ public class Enemy extends Ship implements badguys {
     }
 
     public static String Greeting(){
-        String greeting= "Enemy Ship: Hello. You found me. I'm Enemy Ship." + "It's time for battle.";
+        String[] names= {"Astor", "Bastor", "Castor", "Dastor", "Fastor", "Mastor", "Disastor", "Zastor"};
+        String greeting= "Enemy Ship: Hello. You found me. I'm Enemy Ship of " + names[(int)(Math.random()*names.length)] + ". It's time for battle.";
         return greeting;
     }
 //its what asks the question when there is a bad guy occupying a planet

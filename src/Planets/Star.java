@@ -31,7 +31,7 @@ public class Star extends Planet {
             Enemy.challenge();
         }
         if (dec==2){
-            System.out.println("There's a Ships.Firefly here. Be careful. These guys are unpredictable.");
+            System.out.println("There's a Firefly here. Be careful. These guys are unpredictable.");
             System.out.println(Firefly.Greeting());
             Firefly.challenge();
         }
