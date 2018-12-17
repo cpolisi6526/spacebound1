@@ -13,7 +13,7 @@ public class Runner {
         System.out.println("Hello there welcome to my galaxy. I'm glad you're here to explore and fight. What's your name?");
         String name = in.nextLine();
         MyShip player1 = new MyShip(0, 0);
-        System.out.println("Hey " + name + ". I'm glad you're here to fight off enemy ships.Do you want a 'hard', 'medium' or 'essy' battle? Warning: you lose a challenge, the game ends.");
+        System.out.println("Hey " + name + ". I'm glad you're here to fight off enemy ships.Do you want a 'hard', 'medium' or 'easy' battle? Warning: you lose a challenge, the game ends.");
         String response = in.nextLine();
         if (response.equals("hard")) {
             a = new Board(6);

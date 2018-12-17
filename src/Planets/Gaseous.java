@@ -42,7 +42,6 @@ public class Gaseous extends Planet {
     }
 
 
-
     public void leaveRoom(Ship a) {
         a = null;
     }
